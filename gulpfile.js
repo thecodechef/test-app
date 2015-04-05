@@ -31,4 +31,8 @@ gulp.task('build',function(){
 
 gulp.task('init',run.task('git init'));
 gulp.task('add',run.task('git add .'));
+gulp.task('commit',run.task('git commit -m \'Initial Commit\''));
+gulp.task('pull',run.task('git pull'));
+gulp.task('push',run.task('git push -u origin master'));
+gulp.task('add-remote',run.task('git remote add origin https://www.github.com/thecodechef/test-app.git'));
 gulp.task('install',run.task(['npm install','bower install']));
